@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px 20px;
+            background-color: rgb(217, 225, 237);
+            padding: 50px;
+        }
+
+        .grid-item {
+            background-color: antiquewhite;
+            border: 1px solid black;
+            padding: 20px;
+            font-size: 30px; 
+            text-align: center;
+        }
+
+        
+           
+        /* }
+
+        .item2 {
+            grid-column: 3;
+            grid-row: 1 / span 2;
+        }
+
+        .item5 {
+            grid-column: 1 / span 3;
+            grid-row: 3;
+        } */
+
+        .item1 {
+            grid-column: 1 /span 3;
+            grid-row: 1 ;
+        }
+
+        .item2 {
+            grid-row :2/span 4;
+        }
+
+        .item3 {
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        .item4 {
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+
+        .item5 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row: 3 / span 5;
+        }
+
+        .item6 {
+            grid-area: 5/ 1 / 7 / 2;
+        }
+
+        .item7 {
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        .item8 {
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+
+        .item9 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        .item10 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        .container {
+            background-color: aliceblue;
+            padding: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item item1">Abhijit</div>
+        <div class="grid-item item2">Ishwer</div>
+        <div class="grid-item item3">saransh</div>
+        <div class="grid-item item4">Mukund</div>
+        <div class="grid-item item5">Saurabh</div>
+        <div class="grid-item item6">shreyash</div>
+        <div class="grid-item item7">jeet</div>
+        <div class="grid-item item8">surabhi</div>
+        <div class="grid-item item9">aaditi</div>
+        <div class="grid-item item10">Madhu</div>
+
+    </div>
+    <br><br><br><br>
+    <div class="container">
+        <h2>Rounded Corners</h2>
+        <img src="/image/abhi.jpg" class="img-circle" alt="photo" width="304" height="236">
+    </div>
+    <br><br><br><br>
+
+
+</body>
+
+</html>
